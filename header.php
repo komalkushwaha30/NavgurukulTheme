@@ -16,7 +16,8 @@
     <ul>
       <?php wp_nav_menu(array(
         'theme_location'=>'primary_menu',
-        'menu_class'=>'nav'
+        'menu_class' => 'nav', // This applies the 'nav' class to the <ul>
+      'container' => false   // Rem
       )) ?>
     </ul>
   </nav>
