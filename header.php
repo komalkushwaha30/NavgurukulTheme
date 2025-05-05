@@ -11,13 +11,18 @@
 <body>
 
   <!-- Navbar -->
+   <?php $logoImage = get_header_image();  ?>
   <nav class="navbar">
-    <div class="logo">Navgurukul</div>
+    <div class="logo">
+      <a href="<?php site_url(); ?>">
+        <img src="<?php echo $logoImage ?>" alt="">
+      </a>
+    </div>
     <ul>
       <?php wp_nav_menu(array(
         'theme_location'=>'primary_menu',
-        'menu_class' => 'nav', // This applies the 'nav' class to the <ul>
-      'container' => false   // Rem
+        'menu_class' => 'nav', 
+      'container' => false   
       )) ?>
     </ul>
   </nav>
